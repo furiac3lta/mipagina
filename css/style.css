@@ -1,0 +1,179 @@
+html{
+  scroll-behavior: smooth;
+  }
+  /* -----------------------------NAV----------------------------- */
+  nav{
+    background-image: linear-gradient(to right, rgb(207, 203, 198), rgb(240, 235, 222));
+  }
+  .nav-link:hover{
+    border: solid 1px;
+    border-color: rgb(15, 45, 49);
+    border-radius: 3%;
+    font-size: 20px;
+    transition: all 700ms ease;
+    
+  }
+  
+/* -----------------------------BODY----------------------------- */
+.colorbody{
+      background-image: linear-gradient(to right, rgb(207, 203, 198), rgb(240, 235, 222));
+}
+.carousel, .carousel-inner{
+  max-height: 880px;
+}
+h1{
+  padding: 20px;
+  margin-left: 20px;
+}
+.btn{
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.parrafo{
+padding: 10px;
+}
+.titulos{
+padding: 2rem;
+margin-top: 4rem;
+}
+.titulos:hover{
+ font-size: 60px;
+ transition: all 700ms ease;
+ color: rgb(45, 156, 160);
+ text-decoration: underline;
+  }
+
+/* -----------------------------CONTACTO----------------------------- */
+.formulario{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-top: 10rem;
+  font-family: 'Roboto', sans-serif;
+  border: solid;
+  border-color: rgb(114, 132, 150);
+  border-radius: 1%
+  }
+/* -----------------------------HORARIOS----------------------------- */
+.vacio{
+  padding: 5rem;
+  margin-top: 4rem;
+  }
+/*----------------------------- FOOTER ----------------------------- */
+
+.fa-home{
+  padding-right: 8rem;
+  color: grey;
+  
+}
+.fa-home:hover{
+  color: red;
+  background-color: transparent;
+  font-size: 70px;
+  transition: all 600ms ease;
+  border: none;
+  font-size: 70px;
+}
+.fa-instagram:hover{
+  color: red;
+  background-color: transparent;
+  font-size: 50px;
+  transition: all 500ms ease;
+  border: none;
+}
+.fab{
+color: grey;
+margin-left: 10px;
+}
+.fa-pinterest-p:hover{
+  color: blue;
+  background-color: transparent;
+  font-size: 60px;
+  transition: all 500ms ease;
+  border: none;
+}
+.fa-youtube:hover{
+  color: violet;
+  background-color: transparent;
+  font-size: 60px;
+  transition: all 500ms ease;
+  border: none;
+}
+.fa-twitter:hover{
+  color: yellow;
+  background-color: transparent;
+  font-size: 60px;
+  transition: all 500ms ease;
+  border: none;
+}
+.fa-facebook:hover{
+  color: green;
+  background-color: transparent;
+  font-size: 60px;
+  transition: all 500ms ease;
+  border: none;
+}
+.social__footer__icon{
+  padding: 0 auto;
+}
+/* .home-icon{
+  position: absolute;
+  right: 0px;
+} */
+/* -----------------------------go top -----------------------------*/
+.go-top-container{
+position: fixed;
+bottom: 2rem;
+right: 2rem;
+width: 3.3rem;
+height: 3.3rem;
+z-index: -1;
+}
+.go-top-button{
+width: 0rem;
+height: 0rem;
+background: black;
+border-radius: 50%;
+cursor: pointer;
+transition: 0.2s;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: -1;
+}
+.go-top-button i{
+position: absolute;
+font-size: 1.7rem;
+top: 48%;
+left: 50%;
+transform: translate(-50%, -50%) scale(0);
+color: white;
+transition: 0.4s;
+}
+.show{
+  z-index: 10;
+}
+.show .go-top-button{
+  animation: popup .3s ease-in-out;
+  width: 3.3rem;
+  height: 3.3rem;
+  z-index: 11;
+}
+.show i{
+  transform: translate(-50%, -50%) scale(1);
+}
+@keyframes popup{
+  0%{
+    width: 0rem;
+    height: 0rem;
+  }
+  50%{
+    width: 4rem;
+    height: 4rem;
+  }
+  100%{
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+}

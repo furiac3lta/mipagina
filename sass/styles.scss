@@ -1,0 +1,398 @@
+html{
+  scroll-behavior: smooth;
+}
+.row{
+  margin: 0;
+  padding: 0;
+ }
+
+/* -----------------------------VARIABLES----------------------------- */
+$color1: rgb(80, 78, 76);
+$color2: rgb(75, 74, 72);
+$color3: rgb(238, 209, 130);
+$font-parrafo:'Lato', sans-serif;
+
+nav{
+    background-image: linear-gradient(to right, $color1, $color2);
+    .nav-link:hover{
+      border: solid 1px;
+      border-color: $color3;
+      border-radius: 3%;
+      font-size: 20px;
+      transition: all 500ms ease;
+      
+    }
+}
+/* -----------------------------CARDS DE BOOTSTRAP----------------------------- */
+.card{
+margin: auto;
+padding: 2vh;
+margin-top: 5px;
+margin-left: 3px;
+margin-right: 3px;
+border: 3px solid rgba($color: rgb(255, 255, 255), $alpha: 1.0);
+  &-img-top {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    margin-top: 5vh;
+  }
+    &-text{
+      text-align: center;
+      color: black;
+    }
+}
+
+
+/* -----------------------------EFECTO SCROLL----------------------------- */
+.animado{
+  opacity: 0;
+  transition: all 0.8s;
+}
+.mostrarArriba {
+  animation: mostrarArriba 1.5s;
+}
+@keyframes mostrarArriba{
+  0% {
+  transform: translateY(60px);
+  }
+  100% {
+  transform: translateY(0);
+  }
+}
+/* -----------------------------BODY----------------------------- */
+body{
+  .row{
+      h2{
+        padding: 20px;
+        margin-left: 20px;
+      }
+  }
+}
+
+p{
+  font-family: $font-parrafo;
+  font-size: 18px;
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+.textos{
+  padding: 0 5rem 0 5rem;
+}
+h4{
+color: rgb(28, 132, 158);
+}
+h5{
+color: rgb(136, 53, 53);}
+.carousel ,.carousel-inner{
+  max-height: 100%;
+  object-fit: scale-down;
+}
+.carousel-item {
+  display: block;
+  width: 100%;
+  height: 890px;
+}
+
+.carousel-caption{
+  top: 5%;
+}
+.parrafo__carousel{
+color: rgb(0, 0, 0);
+font-size: 23px;
+}
+.titulos{
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Oswald', sans-serif;
+  
+  &:hover{
+    transition: all 700ms ease;
+    color: $color3;
+    text-decoration: underline;
+    
+  }
+}
+.titulos__contacto{
+  color: rgb(233, 176, 20);
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  
+  &:hover{
+    transition: all 700ms ease;
+    color: $color3;
+    text-decoration: underline;
+    
+  }
+}
+/* -----------------------------VERSION MOBILE----------------------------- */
+/*----------- iPhone 6, 6S, 7 and 8 -----------*/
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .carousel-item {
+      height: 15rem;
+    }
+    .textos{
+      padding: 0 1em 0 1em;
+    }
+  }
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .carousel-item {
+      height: 20rem;
+    }
+    .textos{
+      padding: 0 1em 0 1em;
+    }
+  }
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .carousel-item {
+      height: 20rem;
+    }
+    .textos{
+      padding: 0 1em 0 1em;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .carousel-item {
+      height: 23rem;
+    }
+    .textos{
+      padding: 0 1em 0 1em;
+    }
+
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .carousel-item {
+      height: 30rem;
+    }
+    .textos{
+      padding: 0 1em 0 1em;
+    }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .carousel-item {
+      height: 30rem;
+    }
+    .textos{
+      padding: 0 1em 0 1em;
+    }
+
+}
+/* ----------------------------- FIN VERSION MOBILE----------------------------- */
+
+/* -----------------------------BANNER----------------------------- */
+.banner1{
+  background: url(../img/banner.jpg);
+  float: left;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  text-align: center;
+    h3{
+      background: rgba(0,0,0,0.1);
+      height: 100%;
+      color: rgb(255, 255, 255);
+      font-size: 30px;
+      box-sizing: border-box;
+      padding-top: 10%;
+      font-family: $font-parrafo;
+      
+      }
+}
+
+
+.banner2{
+  background: url(../img/banner2.jpg);
+  float: left;
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  text-align: center;
+    h3{
+      background: rgba(0,0,0,0.1);
+      height: 100%;
+      color: #fff;
+      box-sizing: border-box;
+      padding-top: 10%;
+      font-family: $font-parrafo;
+    }
+}
+
+/* -----------------------------CONTACTO----------------------------- */
+.body__contacto{
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+}
+.formulario{
+  background: rgba(44, 44, 43, 0.5);
+  color: #fff;
+  margin-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 5px;
+  font-family: $font-parrafo;
+  box-shadow: 7px 14px 40px rgb(27, 27, 27);
+}
+.form-control{
+background: rgb(241, 239, 239);
+}
+input{
+  background: rgb(224, 222, 222);
+}
+
+/*----------------------------- FOOTER ----------------------------- */
+footer{
+position: relative;
+bottom: 0;
+width: 100%;
+  font-size: 17px;
+  display: grid;
+  justify-items: center;
+  padding-bottom: 1em;
+  margin-top: 10rem;
+    li{
+      display: inline-block;
+      float: none;
+    }
+}
+.fab-contact{
+  color: rgb(192, 201, 199);
+  margin-left: 10px;
+  }
+  %iconos{
+    color: $color3;
+    background-color: transparent;
+    font-size: 50px;
+    transition: all 500ms ease;
+    border: none;
+  }
+.fa-instagram:hover, .fa-pinterest-p:hover, .fa-youtube:hover, .fa-twitter:hover, .fa-facebook:hover{
+@extend %iconos
+}
+.fab{
+  color: rgb(129, 118, 118);
+  margin-left: 10px;
+  }
+  %iconos{
+    color: $color3;
+    background-color: transparent;
+    font-size: 50px;
+    transition: all 500ms ease;
+    border: none;
+  }
+.fa-instagram:hover, .fa-pinterest-p:hover, .fa-youtube:hover, .fa-twitter:hover, .fa-facebook:hover{
+@extend %iconos
+}
+.social{
+  padding: 0 auto;
+  
+}
+/* -----------------------------FLECHA IR A ARRIBA-----------------------------*/
+.go-top-container{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  z-index: -1;
+  }
+  .go-top-button{
+  width: 0rem;
+  height: 0rem;
+  background: black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+    i{
+      position: absolute;
+      font-size: 1.7rem;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      color: white;
+      transition: 0.4s;
+      }
+  }
+  .show{
+    z-index: 10;
+    i{
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  .show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 3.3rem;
+    height: 3.3rem;
+    z-index: 11;
+  }
+  @keyframes popup{
+    0%{
+      width: 0rem;
+      height: 0rem;
+    }
+    50%{
+      width: 4rem;
+      height: 4rem;
+    }
+    100%{
+      width: 3.3rem;
+      height: 3.3rem;
+    }
+  }
+  
+
+
+
